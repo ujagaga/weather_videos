@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="preview.css"/>
+</head>
+<body>    
+    <div id="video_container">
+        <video id="video_1"
+			class="transition"
+			muted
+			playsinline
+			autoplay
+			preload="auto"
+			onplay="setupVideoQueue('video_1', 'video_2')">
+    		<source src="d01d.mp4" type="video/mp4">
+        </video>
+
+		<video id="video_2"
+			class="transition"
+			muted
+			playsinline
+			preload="auto"
+			onplay="setupVideoQueue('video_2', 'video_1')">
+			<source src="d01d.mp4" type="video/mp4">
+		</video>	
+    </div>   
+</body>
+<script src="preview.js"></script>
+</html>

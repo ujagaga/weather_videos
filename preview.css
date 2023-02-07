@@ -1,0 +1,32 @@
+.transition {
+    transition: opacity 2s;
+}
+
+.transition.fading {
+    opacity: 0;
+}
+
+.transition.showing {
+    opacity: 1;
+}
+
+
+#video_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+#video_container video{
+    height: 50%;
+    width: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
